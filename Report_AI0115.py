@@ -3,7 +3,7 @@ import numpy as np
 
 class SimpleChatBot:
     def __init__(self, filepath):  # 클래스 초기화하면 load_data 함수를 호출 
-        self.questions, self.answers = self.load_data(filepath)
+        self.questions, self.answers = self.load_data(filepath)   # questions 리스트와 answers 리스트를 각각 questions, answers 변수에 담음
         
     def load_data(self, filepath):
         data = pd.read_csv(filepath)    # csv 파일 불러와 데이터프레임으로 변환하여 data에 담음
